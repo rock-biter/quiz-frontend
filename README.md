@@ -8,6 +8,7 @@
    - B) `const` permette di ridefinire la variabile, `let` e `var` no.
    - C) `let` e `const` hanno ambito di blocco, `var` ha ambito di funzione. **(Risposta corretta)**
    - D) `var` e `let` sono immutabili, `const` è mutabile.
+   - E) Non lo so.
 
 2. **Quale di questi metodi non modifica l'array originale, ma ne restituisce uno nuovo?**
 
@@ -19,6 +20,7 @@
    - B) `arr.pop()`
    - C) `arr.map(x => x * 2)` **(Risposta corretta)**
    - D) `arr.splice(1, 2)`
+   - E) Non lo so.
 
 3. **Cosa restituisce il seguente codice?**
 
@@ -35,6 +37,7 @@
    - B) `null`
    - C) `20` **(Risposta corretta)**
    - D) `10`
+   - E) Non lo so.
 
 4. **Quale di questi non è un tipo di dato primitivo in JavaScript?**
 
@@ -42,6 +45,7 @@
 - B) `boolean`
 - C) `array` **(Risposta corretta)**
 - D) `number`
+- E) Non lo so.
 
 5. **Cosa restituisce il seguente codice con l'operatore `nullish coalescing`?**
 
@@ -54,6 +58,7 @@
    - B) `"default value"` **(Risposta corretta)**
    - C) `undefined`
    - D) Lancia un errore
+   - E) Non lo so.
 
 6. **Qual è il risultato del seguente codice che utilizza l'operatore `||` (logical OR)?**
 
@@ -66,6 +71,7 @@
    - B) `'default'` **(Risposta corretta)**
    - C) `null`
    - D) `undefined`
+   - E) Non lo so.
 
 7. **Qual è il risultato del seguente codice che usa lo spread operator?**
 
@@ -80,6 +86,7 @@
    - B) `{ a: 1, b: 3, c: 4 }` **(Risposta corretta)**
    - C) `{ a: 1, b: 2, c: 3 }`
    - D) Lancia un errore
+   - E) Non lo so.
 
 8. **Cosa fa l'operatore `rest` nel seguente codice?**
 
@@ -94,6 +101,7 @@
    - B) Lancia un errore perché sono troppi parametri.
    - C) Limita il numero di parametri a 4.
    - D) Restituisce sempre un valore predefinito.
+   - E) Non lo so.
 
 **9. Qual è la differenza tra `forEach` e `map` quando vengono utilizzati su un array?**
 
@@ -101,6 +109,7 @@
     - B) `forEach` restituisce un nuovo array, mentre `map` no.
     - C) `map` restituisce un nuovo array, mentre `forEach` non restituisce nulla. **(Risposta corretta)**
     - D) `forEach` è sincrono, `map` è asincrono.
+    - E) Non lo so.
 
 10. **Cosa restituisce il seguente codice utilizzando l'operatore `optional chaining`?**
 
@@ -113,6 +122,7 @@ console.log(user.details?.age)
 - B) `null`
 - C) Lancia un errore.
 - D) `0`
+- E) Non lo so.
 
 11. **Cosa restituisce il seguente codice che utilizza l'operatore `===`?**
 
@@ -124,6 +134,7 @@ console.log(0 === '0')
 - B) `false` **(Risposta corretta)**
 - C) `null`
 - D) Lancia un errore
+- E) Non lo so.
 
 12. **Qual è il risultato del seguente codice?**
 
@@ -137,6 +148,7 @@ console.log(newArr)
 - B) `[1, 2, 3, [4, 5]]`
 - C) `[4, 5, 1, 2, 3]`
 - D) Lancia un errore
+- E) Non lo so.
 
 #### **Sezione 2: Manipolazione del DOM**
 
@@ -151,6 +163,7 @@ console.log(newArr)
     - B) Imposta l'HTML interno dell'elemento su `Hello, World!`.
     - C) Imposta il contenuto di testo dell'elemento su `Hello, World!`. **(Risposta corretta)**
     - D) Rimuove l'elemento dal DOM.
+    - E) Non lo so.
 
 14. **Quale metodo è utilizzato per aggiungere un nuovo elemento al DOM?**
 
@@ -162,6 +175,7 @@ console.log(newArr)
     - B) `element.removeChild(newElement)`
     - C) `element.replaceChild(newElement)`
     - D) `element.setAttribute('child', newElement)`
+    - E) Non lo so.
 
 15. **Quale metodo permette di selezionare tutti gli elementi con una determinata classe?**
 
@@ -169,6 +183,7 @@ console.log(newArr)
     - B) `document.querySelectorAll('.myClass')` **(Risposta corretta)**
     - C) `document.getElementByClassName('myClass')`
     - D) `document.getElementsByTagName('myClass')`
+    - E) Non lo so.
 
 16. **Cos'è il DOM (Document Object Model)?**
 
@@ -176,6 +191,7 @@ console.log(newArr)
     - B) Una rappresentazione ad oggetti della struttura di un documento HTML o XML. **(Risposta corretta)**
     - C) Un metodo per inviare richieste HTTP.
     - D) Un tipo di database utilizzato per memorizzare dati strutturati.
+    - E) Non lo so.
 
 17. **Quale metodo viene utilizzato per rimuovere un elemento dal DOM?**
 
@@ -183,12 +199,14 @@ console.log(newArr)
     - B) `element.delete()`
     - C) `document.removeChild(element)`
     - D) `element.removeNode()`
+    - E) Non lo so.
 
 18. **Qual è la differenza tra `innerHTML` e `textContent`?**
     - A) `innerHTML` modifica solo il testo, mentre `textContent` modifica anche gli elementi figli.
     - B) `innerHTML` può interpretare il codice HTML, mentre `textContent` mostra solo testo. **(Risposta corretta)**
     - C) Non c'è differenza, sono intercambiabili.
     - D) `textContent` è usato solo per input form, `innerHTML` no.
+    - E) Non lo so.
 
 #### **Sezione 3: Asincronia e Promises**
 
@@ -210,6 +228,7 @@ console.log(newArr)
     - B) Esegue una richiesta API in modo asincrono e restituisce un oggetto JSON. **(Risposta corretta)**
     - C) Lancia sempre un errore a causa del blocco `try-catch`.
     - D) Restituisce una promessa senza eseguire la richiesta.
+    - E) Non lo so.
 
 20. **Quale di queste è la sintassi corretta per gestire una Promise?**
 
@@ -223,6 +242,7 @@ console.log(newArr)
     - B) `myPromise.catch().then();`
     - C) `myPromise.then().finally();`
     - D) `myPromise.then().then();`
+    - E) Non lo so.
 
 21. **Qual è la funzione di `async` e `await` in JavaScript?**
 
@@ -230,6 +250,7 @@ console.log(newArr)
     - B) Gestiscono le promise in modo più leggibile. **(Risposta corretta)**
     - C) Causano sempre un ritardo nelle operazioni.
     - D) Creano un nuovo thread per gestire operazioni asincrone.
+    - E) Non lo so.
 
 22. **Qual è la differenza tra `setTimeout` e `setInterval`**
 
@@ -237,6 +258,7 @@ console.log(newArr)
     - B) `setTimeout` è asincrono, mentre `setInterval` è sincrono.
     - C) `setInterval` viene eseguito una volta, `setTimeout` ripete l'esecuzione.
     - D) `setTimeout` funziona solo nei browser, `setInterval` no.
+    - E) Non lo so.
 
 #### **Sezione 4: Node.js e Tooling**
 
@@ -246,6 +268,7 @@ console.log(newArr)
     - B) `npm init` **(Risposta corretta)**
     - C) `npm start`
     - D) `node start`
+    - E) Non lo so.
 
 24. **Quale dei seguenti tool è un package manager per JavaScript?**
 
@@ -253,12 +276,14 @@ console.log(newArr)
     - B) `yarn`
     - C) `pip`
     - D) Entrambe A e B. **(Risposta corretta)**
+    - E) Non lo so.
 
 25. **Qual è la funzione di un `package.json`?**
     - A) Gestisce le configurazioni di build di un progetto.
     - B) Elenca le dipendenze di un progetto e definisce script di esecuzione. **(Risposta corretta)**
     - C) Memorizza i dati del database di un'applicazione.
     - D) È usato per testare il progetto.
+    - E) Non lo so.
 
 #### **Sezione 5: Vite e Bundling**
 
@@ -268,12 +293,14 @@ console.log(newArr)
     - B) Eseguire il transpiling e il bundling del codice. **(Risposta corretta)**
     - C) Fornire un framework per il testing.
     - D) Gestire il routing del frontend.
+    - E) Non lo so.
 
 27. **Quale di queste tecnologie viene utilizzata da Vite per migliorare le performance durante lo sviluppo?**
     - A) HMR (Hot Module Replacement) **(Risposta corretta)**
     - B) GraphQL
     - C) WebSockets
     - D) Local Storage
+    - E) Non lo so.
 
 #### **Sezione 6: API e comunicazione con il server**
 
@@ -283,6 +310,7 @@ console.log(newArr)
     - B) `PUT`
     - C) `DELETE`
     - D) `GET` **(Risposta corretta)**
+    - E) Non lo so.
 
 29. **Cosa restituisce il metodo `fetch` in JavaScript?**
 
@@ -290,6 +318,7 @@ console.log(newArr)
     - B) Un oggetto contenente i dati JSON direttamente.
     - C) Una Promise che si risolve con i dati parsati come JSON.
     - D) Un'istanza di XMLHttpRequest.
+    - E) Non lo so.
 
 30. **Come si può inviare dati JSON in una richiesta POST con `fetch`?**
     ```javascript
@@ -305,3 +334,4 @@ console.log(newArr)
     - B) Utilizzando il parametro `body`. **(Risposta corretta)**
     - C) Passando i dati come query string nell'URL.
     - D) Usando `fetch.json()`.
+    - E) Non lo so.
