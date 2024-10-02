@@ -50,12 +50,12 @@
 5. **Cosa restituisce il seguente codice con l'operatore `nullish coalescing`?**
 
    ```javascript
-   const result = null ?? 'default value'
+   const result = false ?? 'default value'
    console.log(result)
    ```
 
-   - A) `null`
-   - B) `"default value"` **(Risposta corretta)**
+   - A) `false` **(Risposta corretta)**
+   - B) `"default value"`
    - C) `undefined`
    - D) Lancia un errore
    - E) Non lo so.
@@ -144,15 +144,62 @@ let newArr = [...arr, 4, 5]
 console.log(newArr)
 ```
 
-- A) `[1, 2, 3, 4, 5]` **(Risposta corretta)**
-- B) `[1, 2, 3, [4, 5]]`
-- C) `[4, 5, 1, 2, 3]`
+- A) `[[1, 2, 3], 2, 3]`
+- B) `[1, 2, 3, 4, 5]` **(Risposta corretta)**
+- C) `[1, 2, 3, [4, 5]]`
+- D) Lancia un errore
+- E) Non lo so.
+
+12. **Qual è il risultato del seguente codice?**
+
+```javascript
+let user = {
+	name: 'Mario',
+	age: 35,
+}
+
+function myfunction({ name }) {
+	return name.toUpperCase()
+}
+
+console.log(myFunction(user))
+```
+
+- A) `{ NAME: MARIO, AGE: 35}`
+- B) `{ name: MARIO }`
+- C) `MARIO` **(Risposta corretta)**
+- D) Lancia un errore
+- E) Non lo so.
+
+12. **Qual è il risultato del seguente codice?**
+
+```javascript
+function getUserInfo() {
+	return ['Mario', 'Rossi']
+}
+
+const [value] = getUserInfo()
+
+console.log(value)
+```
+
+- A) `'Mario'` **(Risposta corretta)**
+- B) `[['Mario','Rossi']]`
+- C) `null`
 - D) Lancia un errore
 - E) Non lo so.
 
 #### **Sezione 2: Manipolazione del DOM**
 
-13. **Cosa fa il seguente codice JavaScript nel contesto del DOM?**
+16. **Cos'è il DOM (Document Object Model)?**
+
+    - A) Un linguaggio di markup utilizzato per creare pagine web.
+    - B) Una rappresentazione ad oggetti della struttura di un documento HTML o XML. **(Risposta corretta)**
+    - C) Un metodo per inviare richieste HTTP.
+    - D) Un tipo di database utilizzato per memorizzare dati strutturati.
+    - E) Non lo so.
+
+17. **Cosa fa il seguente codice JavaScript nel contesto del DOM?**
 
     ```javascript
     const element = document.getElementById('myElement')
@@ -165,7 +212,7 @@ console.log(newArr)
     - D) Rimuove l'elemento dal DOM.
     - E) Non lo so.
 
-14. **Quale metodo è utilizzato per aggiungere un nuovo elemento al DOM?**
+18. **Quale metodo è utilizzato per aggiungere un nuovo elemento al DOM?**
 
     ```javascript
     const newElement = document.createElement('div')
@@ -177,7 +224,7 @@ console.log(newArr)
     - D) `element.setAttribute('child', newElement)`
     - E) Non lo so.
 
-15. **Quale metodo permette di selezionare tutti gli elementi con una determinata classe?**
+19. **Quale metodo permette di selezionare tutti gli elementi con una determinata classe?**
 
     - A) `document.querySelector('.myClass')`
     - B) `document.querySelectorAll('.myClass')` **(Risposta corretta)**
@@ -185,15 +232,7 @@ console.log(newArr)
     - D) `document.getElementsByTagName('myClass')`
     - E) Non lo so.
 
-16. **Cos'è il DOM (Document Object Model)?**
-
-    - A) Un linguaggio di markup utilizzato per creare pagine web.
-    - B) Una rappresentazione ad oggetti della struttura di un documento HTML o XML. **(Risposta corretta)**
-    - C) Un metodo per inviare richieste HTTP.
-    - D) Un tipo di database utilizzato per memorizzare dati strutturati.
-    - E) Non lo so.
-
-17. **Quale metodo viene utilizzato per rimuovere un elemento dal DOM?**
+20. **Quale metodo viene utilizzato per rimuovere un elemento dal DOM?**
 
     - A) `element.remove()` **(Risposta corretta)**
     - B) `element.delete()`
@@ -201,7 +240,7 @@ console.log(newArr)
     - D) `element.removeNode()`
     - E) Non lo so.
 
-18. **Qual è la differenza tra `innerHTML` e `textContent`?**
+21. **Qual è la differenza tra `innerHTML` e `textContent`?**
     - A) `innerHTML` modifica solo il testo, mentre `textContent` modifica anche gli elementi figli.
     - B) `innerHTML` può interpretare il codice HTML, mentre `textContent` mostra solo testo. **(Risposta corretta)**
     - C) Non c'è differenza, sono intercambiabili.
@@ -303,6 +342,23 @@ console.log(newArr)
     - E) Non lo so.
 
 #### **Sezione 6: API e comunicazione con il server**
+
+28. **Quali parametri vengono invitati dal seguente FORM HTML?**
+
+```HTML
+<form method="POST" action="...">
+    <input type="text" id="name" value="Pippo" />
+    <input type="email" id="email" name="email" />
+    <input type="submit" value="Invia" />
+</form>
+
+```
+
+    - A) `name` e `email`
+    - B) solo `email` **(Risposta corretta)**
+    - C) solo `name`
+    - D) nessuno
+    - E) Non lo so.
 
 28. **Quale dei seguenti metodi HTTP è comunemente utilizzato per ottenere dati da un server?**
 
